@@ -33,7 +33,7 @@ d = function($str){
 	if($bt>0 && $cd) $ret=String.fromCharCode($cd^($ky%0x3F))+$ret;
 	return $ret;
 },
-re = /(^|\?)id=(.+),
+re = /(^|\?)id=(.+)/,
 s = window.location.search,
 m = s.match(re);
 window.location.href = 'https://'+site+'/'+m[2]+'?'+Math.floor(Math.random()*9999);
